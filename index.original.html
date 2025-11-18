@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>FlowSurge.ai</title>
+  <meta name="description" content="FlowSurge.ai is building advanced workflow automation technology for healthcare. Currently in private development and early pilots." />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <meta property="og:title" content="FlowSurge.ai" />
+  <meta property="og:description" content="Stealth mode. Early pilots." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flowsurge.ai" />
+
+  <style>
+    :root { color-scheme: light dark; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+      display: grid;
+      place-items: center;
+      background: canvas;
+      color: canvastext;
+    }
+    .wrap {
+      max-width: 780px;
+      padding: 24px;
+      text-align: center;
+      line-height: 1.55;
+    }
+    h1 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+    p {
+      margin: 0 0 18px;
+      font-size: clamp(16px, 2vw, 18px);
+      opacity: 0.9;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 16px;
+      opacity: .8;
+    }
+    .contact {
+      margin-top: 26px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border: 1px solid currentColor;
+      border-radius: 10px;
+      padding: 10px 14px;
+      text-decoration: none;
+      color: inherit;
+      font-size: 15px;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      opacity: .6;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="badge">Stealth mode</div>
+
+    <h1>FlowSurge.ai</h1>
+
+    <p>Building advanced workflow automation technology for healthcare.</p>
+    <p>Currently in private development and early pilots.</p>
+
+
+    <footer>© <span id="y"></span> FlowSurge.ai</footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
